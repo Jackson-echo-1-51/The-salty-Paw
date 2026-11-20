@@ -1,5 +1,4 @@
-/* THE SALTY PAW - LANDING PAGE */
-
+/*This is only for the landing page (index.html)
 /* GENERAL SETTINGS */
 
 * {
@@ -57,11 +56,8 @@ body {
 .landing-container h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin: 10px 0;
-
-    /*color: #20445f;*/
-    color: pink;
+    color: #20445f;
     font-weight: normal;
-
     font-family: "French Script MT", "Snell Roundhand",
     "Apple Chancery", "Brush Script MT", cursive;
 }
@@ -115,50 +111,6 @@ body {
     margin-top: 30px;
     font-size: 0.85rem;
     color: #20445f;
-}
-
-/* ACCESSIBILITY */
-
-/* HIGH CONTRAST */
-
-.high-contrast body {
-    background: #001526;
-    color: #ffffff;
-}
-
-.high-contrast .landing-container {
-    background: #001526;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-}
-
-.high-contrast .landing-container h1,
-.high-contrast .landing-footer {
-    color: #ffffff;
-}
-
-.high-contrast .enter-button {
-    background: #000000;
-    color: #00ffff;
-    border: 2px solid #00ffff;
-}
-
-/* DYSLEXIA-FRIENDLY FONT */
-
-.dyslexia-font body {
-    font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
-    letter-spacing: .03em;
-    line-height: 1.7;
-}
-
-/* REDUCED MOTION */
-
-.reduce-motion *,
-.reduce-motion *::before,
-.reduce-motion *::after {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
 }
 
 /* MOBILE LAYOUT */
