@@ -58,7 +58,8 @@ body {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin: 10px 0;
 
-    color: #20445f;
+    /*color: #20445f;*/
+    color: pink;
     font-weight: normal;
 
     font-family: "French Script MT", "Snell Roundhand",
