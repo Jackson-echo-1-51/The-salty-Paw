@@ -1,0 +1,136 @@
+     
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>The Salty Paw</title>
+    <meta name="author" content="Owen Carneavale, with help from Jackson, William, and Kellan">
+    <link rel="stylesheet" href="productgroup.css">
+    <link rel="icon" class="favacon" type="image/png" href="\../main_page/Thesaltypawlogo.png">
+  </head>
+  <body>
+   
+    <button id="toggle" aria-expanded="false" aria-controls="panel">
+  Accessibility options
+</button>
+
+<div id="panel" role="region" label="Accessibility options" hidden>
+  <button data-action="font-up">Larger text</button>
+  <button data-action="font-down">Smaller text</button>
+  <button data-action="contrast" aria-pressed="false">High contrast</button>
+  <button data-action="reduceMotion" aria-pressed="false">Reduce motion</button>
+  <button data-action="dyslexia" aria-pressed="false">Readable font</button>
+  <button data-action="reset">Reset all</button>
+</div>
+    <div class="main"><h1 class="tagline">Pawsome brand for coastal hands</h1></div>
+        <div class="nav">
+          <img class="hamburger" id="hamburger" src="../main_page/hamburgermenu.png" alt="Hamburger.jpgggg" onclick="poof()">
+          <div id="navbar" class="navbar">
+          <div class="navlinks">
+          <table>
+          <tr>
+            <td><p class="navlink"><a href="../main_page/contactus.html">Contact us / More Info</a></p></td>
+            <td><p class="navlink"><a href="../main_page/mainpage.html">Home</a></p></td>
+            <td><p class="navlink"><a href="../main_page/products.html">Products</a></p></td>
+          </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+        <div class="main">
+        <div id="beans" class="thxbox">
+          <p>Thanks for purchasing!</p>
+          <button class="cols" onclick="cancel1()">
+          Close</button>
+          </div>
+      <div id="beanz" class="orderinfo">
+        <div class="thingymabob">
+        <form method="dialog" onsubmit="unbuy1()">
+    <label> Name on the card<br> <input name="ccname" placeholder="First-Name Last-Name" autofocus required/></label>
+<br><br>
+    <label>Credit card number<br> <input name="cardnumber" placeholder="Type Here" pattern="[0-9]{12,19}" required/> </label>
+<br><br>
+    <label> Card Security Code <br> <input name="csc" placeholder="Type Here" pattern="[0-9]{3,4}" required/> </label>
+<br><br>
+    <label>Expiry date<br> <input name="cc-exp" placeholder="mm-yy" requiredpattern="[0-1][0-9]-[0-9][0-9]"/></label>
+<br><br>
+    <button class="ohno">
+      Purchase
+    </button>
+    <button class="cancel" onclick="cancel1()">
+          cancel</button>
+        </form>
+        
+  </div>
+        </div>
+<table class="fthis"><tr><td></td>
+<td>
+  <div class="text">
+<p class="pname">Cute Cotton Dog Collar for Boy and Girl Puppy Collar - Summer Tropical Beach Pattern - Adjustable Soft Collar for Small, Medium, Large Dogs</p>
+<p class="pdesc">About this item:</p><ul>
+<li><p class="pdesc">[Soft Dog Collar] - Cotton dog collar made of high quality soft material and textile hand-sewn, light weight, soft without being flimsy, feel comfortable, strong toughness, durable, skin-friendly. Premium soft fabric materials brings comfiest feeling in casual. Blending a lightweight design with supreme comfort, ensuring your pooch companion experiences pure ease without any added burden- the perfect collar for your beloved dog.</p></li>
+<li><p class="pdesc">[stitching process] - The collar is made of soft, skin-friendly, lightweight cotton material, hand-stitched with double-stitching, uniform, strong, well-made stitching increases the beauty and sophistication of the dog collar, improves the durability of the dog collar, makes it more robust and fine, and pays high attention to pet details, representing the concept of "PREHAI pet comfort quality first ".</p></li>
+<li><p class="pdesc">[Tropical Beach Dog Collar] - Bring a little sunshine to your pup's style with this tropical beach-inspired dog collar! Featuring vibrant summer colors, playful tropical patterns, and charming beach-themed accents, this collar captures the fun and relaxation of a sunny seaside getaway. Made with soft, comfortable fabric and a stylish, eye-catching design, it's the perfect summer accessory for your furry friend.</p></li></ul>
+
+        <button class="omgbuy"onclick="buy1()">Purchase</button>
+        </div></td>
+        </tr></table>
+    <p>Description->Multi-size dog beach themed dog collar. 
+
+Reviews-> No reviews yet 
+
+(Dog Treats) 
+
+Description-> Tasty meat flavored dog biscuits 
+
+Reviews-> No reviews yet 
+
+(Hat) 
+
+Description-> One size fits all hat with customizable text 
+
+Reviews-> No reviews yet 
+
+(Tee shirt) 
+
+Description-> Tan unisex tee shirt with The Salty Paw™ logo on front breast and across back 
+
+Reviews-> No reviews yet 
+
+Header  
+
+Pawsome Brands for Coastal Hands™ 
+
+Main text 
+
+Name and description of product 
+
+Order now button 
+
+Customer reviews </p>
+
+    <p class="invis"> </p>
+</div>
+    <script src="brainmelter9000.js"></script>
+  </body>
+  <!-- actually use your first name as it appears on blackboard so that the editor/ms.curry can identify who is who -->
+  <!-- we have to access and mess with this page at least once a week otherwise it get deleted -->
+</html>
+<!-- 
+/* CSS HEX */
+--soft-peach: #f1daa7ff;
+--cool-steel: #f1faffff;
+--blue-slate: #cfeefcff;
+--tropical-mint: #00ffcdff;
+--ink-black: #091720ff;
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-right: linear-gradient(90deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-bottom: linear-gradient(180deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-left: linear-gradient(270deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-top-right: linear-gradient(45deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-bottom-right: linear-gradient(135deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-top-left: linear-gradient(225deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-bottom-left: linear-gradient(315deg, #f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+$gradient-radial: radial-gradient(#f1daa7ff, #96acb7ff, #395c6bff, #00ffcdff, #091720ff);
+--> <!-- disregard this -->
+ <!-- hehe box    -->

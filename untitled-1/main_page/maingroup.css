@@ -1,0 +1,459 @@
+
+/* ACCESSIBILITY SETTINGS */
+
+html {
+    font-size: calc(100% * var(--font-scale, 1));
+}
+
+.high-contrast body {
+    background: #001526;
+    color: #ffffff;
+}
+.high-contrast a {
+    color: #00ffff;
+}
+.high-contrast .navbar {
+    background: #20445f;
+}
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+}
+
+.dyslexia-font body {
+    font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
+    letter-spacing: .03em;
+    line-height: 1.7;
+}
+
+#toggle:focus-visible,
+#panel button:focus-visible {
+    outline: 3px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+
+/*GENERAL*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    background-color: #20445f;
+    color: #f1faff;
+    font-size: 16px;
+    margin: 8px;
+}
+
+a {
+    color: #66A0CC;
+}
+
+.invis {
+    display: none;
+}
+button {
+    border-radius: 5px;
+    background-color: #f1daa7ff;
+    color: #66A0CC; 
+    border: none;
+    margin: 5px auto;
+}
+/*GENERAL END*/
+
+/* NAVBAR */
+.nav {
+    margin: 0 auto !important;
+}
+
+.navbar {
+    background-color: #f1daa7ff;
+    padding: 0 10px;
+    margin-bottom: 0;
+    text-align: center;
+    overflow: hidden;
+
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.navlinks {
+    width: 100%;
+}
+
+.navlinks table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.navlinks tr {
+    display: table-row;
+}
+
+.navlinks td {
+    width: 33.333%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.navlink {
+    margin: 0;
+    padding: 5px;
+}
+/*NAVBAR END*/
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 2em;
+}
+
+
+/* HEADINGS AND TEXT */
+
+.tagline {
+    margin-top: -25px;
+    text-align: center;
+    font-size: clamp(35px, 6vw, 75px);
+    font-weight: normal;
+    font-family: "French Script MT", "Snell Roundhand",
+    "Apple Chancery", "Brush Script MT", "Lucida Handwriting", cursive;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.main {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.25rem;
+}
+
+span.Tradmark {
+    font-size: .5em;
+    vertical-align: .5em;
+}
+/*HEADINGS AND TEXT END*/
+
+/* LOGO AND BANNERS */
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.banner2 {
+    width: 95%;
+    margin: 0 auto;
+}
+/*LOGO AND BANNERS END*/
+
+/* PRODUCT GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    text-align: center;
+}
+
+.Product img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Product p {
+    margin-top: -1rem;
+    margin-bottom: 5em;
+}
+
+.Tee-Shirt p {
+    margin-top: 1rem;
+}
+/*PRODUCT GRID END*/
+
+/* IMAGE CAROUSEL */
+.carousel {
+    position: relative;
+    width: 10%;
+    max-width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.track img {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* IMAGE CAROUSEL END */
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    display: none;
+    transition: transform 0.35s ease;
+}
+
+.hamburger.active {
+    transform: translateX(clamp(-200px, -35vw, -100px)) rotate(90deg);
+    margin: 20px auto !important;
+}
+/* HAMBURGER MENU END */
+
+/* PHONE SCREENS (600px AND BELOW) */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .tagline {
+        font-size: 38px;
+        margin-top: 0;
+    }
+
+    .navbar table {
+        font-size: 14px;
+    }
+
+    .navbar td {
+        padding: 3px;
+        overflow-wrap: anywhere;
+    }
+
+    .logo {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .main {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Product img {
+        width: 180px;
+        max-width: 90%;
+    }
+
+    .Product p {
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .info {
+        padding-left: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    .return {
+        overflow-wrap: anywhere;
+    }
+
+    .hamburger {
+        display: block !important;
+        width: 100px;
+        height: auto;
+        margin: 0 auto !important;
+        cursor: pointer;
+        transition: transform 0.35s ease;
+    }
+
+    .navbar {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        visibility: hidden;
+
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    .navbar.open {
+        max-height: 300px;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    div.carousel {
+        display: none;
+    }
+
+    .navlinks {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navlinks table {
+        display: block;
+        width: 100%;
+    }
+
+    .navlinks tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .navlinks tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navlinks td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navlink {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* TABLET SCREENS (601px - 1024px) */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .tagline {
+        font-size: 55px;
+    }
+
+    .navbar table {
+        font-size: 18px;
+    }
+
+    .logo {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .main {
+        font-size: 1.15rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .Product img {
+        width: 180px;
+        max-width: 90%;
+    }
+
+    .carousel {
+        max-width: 95%;
+    }
+}
+
+
+/* LARGE SCREENS (1025px AND ABOVE) */
+
+@media screen and (min-width: 1025px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .tagline {
+        font-size: 75px;
+    }
+
+    .navbar table {
+        font-size: 24px;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main {
+        font-size: 1.25rem;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .Product img {
+        width: 200px;
+        max-width: 100%;
+    }
+
+    .carousel {
+        max-width: 800px;
+    }
+}

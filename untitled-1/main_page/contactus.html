@@ -1,0 +1,64 @@
+   
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us and More Information</title>
+    <meta name="author" content="Owen Carneavale, with help from Jackson, William, and Kellan">
+    <link rel="stylesheet" href="maingroup.css">
+    <link rel="icon" class="favacon" type="image/png" href="Thesaltypawlogo.png">
+  </head>
+  <body>
+   
+      <body>
+    <button id="toggle" aria-expanded="false" aria-controls="panel">
+  Accessibility options
+</button>
+<div id="panel" role="region" label="Accessibility options" hidden>
+  <button data-action="font-up">Larger text</button>
+  <button data-action="font-down">Smaller text</button>
+  <button data-action="contrast" aria-pressed="false">High contrast</button>
+  <button data-action="reduceMotion" aria-pressed="false">Reduce motion</button>
+  <button data-action="dyslexia" aria-pressed="false">Readable font</button>
+  <button data-action="reset">Reset all</button>
+</div>
+    <div class="main"><h1 class="tagline">Get in touch!</h1></div>
+
+        <div class="nav">
+          <img class="hamburger" id="hamburger" src="./hamburgermenu.png" alt="Hamburger.jpgggg" onclick="poof()">
+          <div id="navbar" class="navbar">
+          <div class="navlinks">
+          <table>
+          <tr>
+            <td><p class="navlink"><a href="./contactus.html">Contact us / More Info</a></p></td>
+            <td><p class="navlink"><a href="./mainpage.html">Home</a></p></td>
+            <td><p class="navlink"><a href="./products.html">Products</a></p></td>
+          </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+        <div class="main">
+    <ul class="info">
+      <li>Phone: 123-456-7890</li><br>
+      <li>Fax: 123-456-7890</li><br>
+      <li>Email: thesaltypaw.bluffton@gmail.com</li><br>
+      <li>Address: 1.5 forest beach Dr., Hilton Head Island, SC 29928</li><br>
+      </ul>
+      <h2>Returns:</h2>
+      <p class="return">If a product has been purchased within the last 24 hours and is in sellable condition, a customer may get a full refund so long as they have proof of purchase.</p>
+    <p class="invis"> </p>
+</div>
+    <script src="ihatethis.js"></script>
+        <script>
+  try {
+    const prefs = JSON.parse(localStorage.getItem('prefs') || '{}');
+    const root = document.documentElement;
+    if (prefs.fontScale) root.style.setProperty('--font-scale', prefs.fontScale);
+    if (prefs.contrast) root.classList.add('high-contrast');
+    if (prefs.reduceMotion) root.classList.add('reduce-motion');
+    if (prefs.dyslexia) root.classList.add('dyslexia-font');
+  } catch (e) {}
+</script>
+  </body>
+</html>

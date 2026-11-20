@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Salty Paw</title>
+    <meta name="author" content="Owen Carneavale, with help from Jackson, William, and Kellan">
+    <link rel="stylesheet" href="maingroup.css">
+    <link rel="icon" class="favacon" type="image/png" href="Thesaltypawlogo.png">
+  </head>
+  <body>
+    <button id="toggle" aria-expanded="false" aria-controls="panel">
+  Accessibility options
+</button>
+
+<div id="panel" role="region" label="Accessibility options" hidden>
+  <button data-action="font-up">Larger text</button>
+  <button data-action="font-down">Smaller text</button>
+  <button data-action="contrast" aria-pressed="false">High contrast</button>
+  <button data-action="reduceMotion" aria-pressed="false">Reduce motion</button>
+  <button data-action="dyslexia" aria-pressed="false">Readable font</button>
+  <button data-action="reset">Reset all</button>
+</div>
+    <img class="logo" src="Thesaltypawlogo.png">
+    <div class="main">
+      <h1 class="tagline">Pawsome brand for coastal hands<span class="Tradmark">&trade;</span></h1>
+      <div id="carousel" class="carousel">
+        <div class="track">
+          <img src="./800px-Josuke_ASB_R.png" alt="Slide 1">
+          <img src="./400px-Rohan_au_Louvre_JUMP_COMICS.png" alt="Slide 2">
+          <img src="./2ea303c2245c1bc93d3c26275a3dad11.jpg" alt="Slide 3">
+         </div>
+        </div>
+        <div class="nav">
+          <img class="hamburger" id="hamburger" src="./hamburgermenu.png" alt="Hamburger.jpgggg" onclick="poof()">
+          <div id="navbar" class="navbar">
+          <div class="navlinks">
+          <table>
+          <tr>
+            <td><p class="navlink"><a href="./contactus.html">Contact us / More Info</a></p></td>
+            <td><p class="navlink"><a href="./mainpage.html">Home</a></p></td>
+            <td><p class="navlink"><a href="./products.html">Products</a></p></td>
+          </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+    <div class="main">
+    <p>We are a locally owned and ran business in South Carolina. We believe in everyone being able to have some fun in the sun, with quality products made with care, by people who care. We are devoted to providing the best service available and ensuring that everyone has a great time. Online, we host a variety of products such as dog treats, dog collars, hats, hats and tee shirts, which many of can be customized to your liking. In person, we sell soft drinks, snacks, sunscreen and towels. </p>
+    <p class="invis"> </p>
+    
+</div>
+    <script src="ihatethis.js"></script>
+    <script>
+  try {
+    const prefs = JSON.parse(localStorage.getItem('prefs') || '{}');
+    const root = document.documentElement;
+    if (prefs.fontScale) root.style.setProperty('--font-scale', prefs.fontScale);
+    if (prefs.contrast) root.classList.add('high-contrast');
+    if (prefs.reduceMotion) root.classList.add('reduce-motion');
+    if (prefs.dyslexia) root.classList.add('dyslexia-font');
+  } catch (e) {}
+</script>
+  </body>
+</html>

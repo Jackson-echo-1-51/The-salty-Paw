@@ -1,0 +1,192 @@
+/* THE SALTY PAW - LANDING PAGE */
+
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(100% * var(--font-scale, 1));
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+
+    font-family: "Trebuchet MS", "Lucida Grande",
+    "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+
+    background-color: #20445f;
+    color: #f1faff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* LANDING CONTAINER */
+
+.landing-container {
+    width: 95%;
+    max-width: 850px;
+    padding: 45px 30px;
+
+    background-color: #f1daa7;
+    color: #20445f;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* LOGO */
+
+.landing-logo {
+    display: block;
+    width: 75%;
+    max-width: 400px;
+    height: auto;
+
+    margin: 0 auto 15px;
+}
+
+/* HEADINGS */
+
+.landing-container h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 10px 0;
+
+    color: #20445f;
+    font-weight: normal;
+
+    font-family: "French Script MT", "Snell Roundhand",
+    "Apple Chancery", "Brush Script MT", cursive;
+}
+
+/* DESCRIPTION */
+
+.landing-container p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+
+    margin: 15px auto 25px;
+    max-width: 600px;
+}
+
+/* ENTER BUTTON */
+
+.enter-button {
+    display: inline-block;
+
+    padding: 13px 35px;
+    margin: 10px;
+
+    background-color: #20445f;
+    color: #f1daa7;
+
+    border: 2px solid #20445f;
+    border-radius: 6px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.25s ease,
+                color 0.25s ease;
+}
+
+.enter-button:hover {
+    background-color: #66A0CC;
+    color: #ffffff;
+    border-color: #66A0CC;
+}
+
+.enter-button:focus-visible {
+    outline: 3px solid #20445f;
+    outline-offset: 4px;
+}
+
+/* FOOTER */
+
+.landing-footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #20445f;
+}
+
+/* ACCESSIBILITY */
+
+/* HIGH CONTRAST */
+
+.high-contrast body {
+    background: #001526;
+    color: #ffffff;
+}
+
+.high-contrast .landing-container {
+    background: #001526;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.high-contrast .landing-container h1,
+.high-contrast .landing-footer {
+    color: #ffffff;
+}
+
+.high-contrast .enter-button {
+    background: #000000;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+}
+
+/* DYSLEXIA-FRIENDLY FONT */
+
+.dyslexia-font body {
+    font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
+    letter-spacing: .03em;
+    line-height: 1.7;
+}
+
+/* REDUCED MOTION */
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+}
+
+/* MOBILE LAYOUT */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .landing-container {
+        width: 100%;
+        padding: 30px 18px;
+    }
+
+    .landing-logo {
+        width: 90%;
+    }
+
+    .landing-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-container p {
+        font-size: 1rem;
+    }
+
+    .enter-button {
+        width: 90%;
+        padding: 12px;
+    }
+}
